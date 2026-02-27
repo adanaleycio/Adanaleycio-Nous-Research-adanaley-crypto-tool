@@ -1,17 +1,26 @@
-# Feature: Cryptocurrency Price Intelligence Tool
+# 🚀 Hermes Agent - Advanced Crypto Price Skill
 
-## Overview
-This pull request introduces a new tool for the Hermes Agent that allows users to fetch real-time and historical cryptocurrency data via the CoinGecko API.
+This repository contains a high-performance cryptocurrency data tracking module specifically developed for the **Hermes Agent** ecosystem. 🛠️
 
-## Changes
-- Created `crypto_price.py` within the tools directory.
-- Integrated `price get` and `price history` functionalities.
-- Implemented structured JSON output for seamless agent processing.
+## 🧠 About My Implementation
 
-## How to Test
-Run the following command in your terminal:
-`python3 hermes_agent/tools/crypto_price.py price get bitcoin --currency usd`
+The core philosophy behind this project is **modularity** and **system stability**. Instead of modifying the core files of the Hermes Agent (such as `__init__.py`), I implemented this as a standalone, plug-and-playable module that utilizes the agent's terminal execution capabilities.
 
-## Technical Details
-- **API:** CoinGecko (Public)
-- **Dependencies:** `requests`, `argparse`, `json`
+* **Clean Architecture:** Designed with functional programming principles, avoiding unnecessary complexity.
+* **Robust Error Handling:** Features a secure architecture that catches API connection timeouts and invalid user inputs.
+* **Seamless Integration:** Built to be easily dropped into any existing Hermes installation without breaking core functionalities.
+
+## 💸 Developed Bitcoin & Altcoin Skill
+
+This skill leverages the **CoinGecko API** to bring real-time market intelligence directly to your terminal. It supports Bitcoin and thousands of other altcoins. 📊
+
+### ✨ Key Features:
+* **Live Prices:** Instant market data retrieval using the `price get` command. ⚡
+* **Historical Data:** Deep-dive analysis capabilities with the `price history` feature. 📈
+* **Multi-Currency Support:** Fetching data in various parities like USD or EUR. 🌍
+
+## 🛠️ Installation & Usage
+
+1. **Install Dependencies:**
+   ```bash
+   pip install requests
